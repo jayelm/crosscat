@@ -19,7 +19,7 @@
 #
 import functools
 #
-from IPython.parallel import Client
+from ipyparallel import Client
 #
 import crosscat
 import crosscat.LocalEngine as LE
@@ -42,7 +42,7 @@ class IPClusterEngine(LE.LocalEngine):
     def __init__(self, config_filename=None, profile=None, seed=None, sshkey=None, packer='json'):
         """Initialize a IPClusterEngine
 
-        Do IPython.parallel operations to set up cluster and generate mapper.
+        Do ipyparallel operations to set up cluster and generate mapper.
 
         """
         super(IPClusterEngine, self).__init__(seed=seed)

@@ -84,7 +84,7 @@ col_names = numpy.array([M_c['idx_to_name'][str(col_idx)] for col_idx in range(n
 
 
 ## set up parallel
-from IPython.parallel import Client
+from ipyparallel import Client
 c = Client(ipython_parallel_config)
 dview = c[:]
 with dview.sync_imports():
